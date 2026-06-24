@@ -26,9 +26,13 @@ if query:
     )
 
     st.subheader("Search Results")
+    st.info(f"Found {len([r for r in results if r[2] > 0])} matching documents")
 
     for filename, document, score in results:
         if score > 0:
-            st.write(f"📄 {filename} (Score: {score:.4f})")
-            st.write(document)
-            st.write("---")
+             st.success(f"📄 {filename}")
+             st.caption("Matching document")
+             st.progress(float(score))
+             st.metric("Similarity Score", f"{score*100:.2f}%")
+             st.write(document)
+             st.divider()
