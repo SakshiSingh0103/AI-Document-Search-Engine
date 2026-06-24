@@ -6,6 +6,16 @@ st.set_page_config(
     layout="wide"
 )
 
+st.sidebar.title("📊 AI Search Engine")
+
+st.sidebar.info("""
+Search documents using:
+
+- TF-IDF
+- Cosine Similarity
+- Streamlit UI
+""")
+
 st.title("🔍 AI Document Search Engine")
 st.caption("Search documents using TF-IDF and Cosine Similarity")
 
@@ -36,3 +46,5 @@ if query:
              st.metric("Similarity Score", f"{score*100:.2f}%")
              st.write(document)
              st.divider()
+             st.markdown("---")
+st.markdown("Developed by Sakshi Singh 🚀")
