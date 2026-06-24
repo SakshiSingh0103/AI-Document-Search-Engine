@@ -2,6 +2,10 @@
 
 A simple AI-powered document search engine built using Python, Scikit-learn, TF-IDF Vectorization, Cosine Similarity, and Streamlit.
 
+## Application Screenshot
+
+![Search Engine Screenshot](screenshot.png)
+
 ## Features
 
 - Search across multiple text documents
