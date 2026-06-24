@@ -32,6 +32,13 @@ SearchEngine/
 ├── search.py
 ├── requirements.txt
 └── README.md
+## Future Improvements
+
+- PDF document support
+- Upload documents through UI
+- Highlight matching keywords
+- Search history
+- Dark mode
 
 ## How to Run
 
