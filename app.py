@@ -1,12 +1,16 @@
 import streamlit as st
 
-from indexer import build_index
-from search import search_documents
-
-st.set_page_config(page_title="AI Search Engine", page_icon="🔍")
+st.set_page_config(
+    page_title="AI Document Search Engine",
+    page_icon="🔍",
+    layout="wide"
+)
 
 st.title("🔍 AI Document Search Engine")
-st.write("Search through your documents using Natural Language Processing")
+st.caption("Search documents using TF-IDF and Cosine Similarity")
+
+from indexer import build_index
+from search import search_documents
 
 documents, filenames, vectorizer, tfidf_matrix = build_index()
 
