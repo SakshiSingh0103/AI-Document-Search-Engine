@@ -1,15 +1,12 @@
-# AI Document Search Engine
+# 🔍 AI Document Search Engine
 
-A simple AI-powered document search engine built using Python, Scikit-learn, TF-IDF Vectorization, Cosine Similarity, and Streamlit.
-
-## Application Screenshot
-
-![Search Engine Screenshot](screenshot.png)
+An AI-powered document search engine built using Python, Streamlit, TF-IDF Vectorization, and Cosine Similarity.
 
 ## Features
 
-- Search across multiple text documents
-- TF-IDF based document indexing
+- Search across text documents
+- Search PDF documents
+- TF-IDF based indexing
 - Cosine Similarity ranking
 - Streamlit web interface
 - Fast document retrieval
@@ -17,35 +14,32 @@ A simple AI-powered document search engine built using Python, Scikit-learn, TF-
 ## Technologies Used
 
 - Python
-- Scikit-learn
-- NumPy
-- Pandas
 - Streamlit
+- Scikit-learn
+- PyPDF
+- NumPy
 
 ## Project Structure
 
+```
 SearchEngine/
 │
 ├── documents/
-│   ├── doc1.txt
-│   ├── doc2.txt
-│   └── doc3.txt
-│
+├── pdfs/
 ├── app.py
 ├── indexer.py
 ├── search.py
 ├── requirements.txt
 └── README.md
-## Future Improvements
-
-- PDF document support
-- Upload documents through UI
-- Highlight matching keywords
-- Search history
-- Dark mode
+```
 
 ## How to Run
 
+```bash
 pip install -r requirements.txt
-
 streamlit run app.py
+```
+
+## Screenshot
+
+![App Screenshot](screenshot.png)
